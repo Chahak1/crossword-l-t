@@ -8,6 +8,8 @@
 body{
     color: #6f7072;
     overflow: hidden;
+    display: flex;
+    flex-direction: column-reverse;
 }
 .header{
     position: fixed;
@@ -62,6 +64,11 @@ body{
     text-align: justify;
     text-shadow: 0 0 10px rgba(0,0,0,0.3);
     margin-bottom: 30px;
+}
+.footer{
+    height: 500px;
+    margin-top: auto;
+    display: inline;
 }
 .btn-group{
     cursor: pointer;
@@ -221,6 +228,20 @@ h2{
     border-bottom: 5px double black;
     padding-left: 15px;
 }
+
+.crossword{
+    padding: 25em;
+    opacity: 0;
+    pointer-events: none;
+    transition: .3s ease;
+    
+    max-width: 50ch;
+}
+.crossword.active{
+    opacity: 1;
+    pointer-events: auto;
+    
+}
 .popup-info{
     position: absolute;
     top: 50%;
@@ -259,28 +280,3 @@ h2{
     align-items: center;
 }
 
-.timer .time_left_txt{
-    font-weight: 400;
-    font-size: 17px;
-    user-select: none;
-}
-.timer .timer_sec{
-    font-size: 18px;
-    font-weight: 500;
-    height: 30px;
-    width: 45px;
-    color: #fff;
-    border-radius: 5px;
-    line-height: 30px;
-    text-align: center;
-    background: #343a40;
-    border: 1px solid #343a40;
-    user-select: none;
-}
-.time_line{
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    height: 3px;
-    background: #007bff;
-}

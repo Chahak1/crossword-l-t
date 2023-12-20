@@ -21,12 +21,6 @@
             <div class="container"> 
                 <section class="puzzle-section">
                     
-                    <div class="timer">
-                        <div class="time_left_txt">Time Left:</div>
-                        <div class="timer_sec">15</div>
-                    </div>
-                    <div class="time_line"></div>
-                    
     <table id="table" cellspacing="0"></table>
                     
                     <div class="across">
@@ -54,13 +48,9 @@
                             <li>1.</li>
                         </ul>
                     </div>
-                    <section class="footer">
-                        <button onclick="key_check()">CHECK</button><br>
-                        <button onclick="color_clear()">CLEAR</button>
-                        <button class="sub">SUBMIT</button>
-                </section>    
+                  <!---   -->   
                 
-                <section class="crossword">
+                <dialog class="crossword" id="crossword">
                 <div class="popup-info">
                     <h2>Finish!</h2>
                     <span class="info">You Got It!<br>
@@ -68,7 +58,12 @@
                     <div class="btn-grp">
                     <button class="exit-btn">Exit</button></div>
                 </div>         
-            </section>          
+                </dialog> 
+                <footer class="footer">
+                    <button onclick="key_check()">CHECK</button><br>
+                    <button onclick="color_clear()">CLEAR</button>
+                    <button class="sub">SUBMIT</button>
+            </footer>         
                 </section>
                 
             <section class="home">
@@ -86,7 +81,7 @@
                 </div>
             </section>
         </div>
-    </main>
+        </div>
     
         </body>
     <script src="prac.js"></script>
